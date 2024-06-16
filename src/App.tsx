@@ -4,7 +4,7 @@ import './App.css';
 import List from './Components/List';
 import AddToList from './Components/AddToList';
 
-interface IState{
+export interface IState {
   people: {
     name: string
     age: number

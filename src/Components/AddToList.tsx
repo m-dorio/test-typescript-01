@@ -10,12 +10,14 @@ const AddToList = () => {
         notes: ""
     })
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
         setInput({
             ...input,
             [event.target.name]: event.target.value
         });
+    }
+
+    const handleClick = (): void => {
 
     }
 
@@ -31,6 +33,9 @@ const AddToList = () => {
             <textarea placeholder="Notes" value={input.notes}
                 onChange={handleChange} name="notes"
                 className="AddToList-input" />
+
+            <button type="button" className="btn AddToList-btn" onClick={handleClick}>+</button>
+
         </div>
     );
 }
