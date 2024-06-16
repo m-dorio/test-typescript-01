@@ -3,29 +3,24 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [number, setNumber] = useState<number | string>(5);
-  
-  const changeNumber = () => {
-    setNumber("10");
-  }
 
+  const [people, setPeople] = useState([
+    {
+    name: "LeBron James",
+      url: "",
+      age: 30,
+    info:"Allergic to its team mates"
+    },
+    {
+      name: "Kobe",
+      url: "",
+      age: 31
+    }
+  ]);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>Invited Game friends</h1>
     </div>
   );
 }
