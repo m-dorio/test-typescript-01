@@ -1,6 +1,16 @@
 import React from "react";
 
-const List = () => {
+interface IProps{
+  people: {
+    name: string
+    age: number
+    url: string
+    notes?: string
+  }[]
+}
+
+const List = (props: IProps) => {
+
     return (
         <div>
             I am a list of person

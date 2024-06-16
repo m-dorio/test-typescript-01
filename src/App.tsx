@@ -15,15 +15,13 @@ interface IState{
 function App() {
 
   const [people, setPeople] = useState<IState["people"]>([]);
-
-  // people.map(person => {
-  //   person.notes
-  // })
+  // Pass data to props
 
   return (
     <div className="App">
       <h1>Invited Game friends</h1>
-      <List />
+      {/* pass data props here */}
+      <List people={people} />
     </div>
   );
 }
