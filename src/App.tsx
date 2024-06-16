@@ -30,7 +30,7 @@ function App() {
       <h1>Invited Game friends</h1>
       {/* pass data props here */}
       <List people={people} />
-      <AddToList />
+      <AddToList people={people} setPeople={setPeople} />
     </div>
   );
 }

@@ -1,5 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { IState as Props } from "../App";
+
+interface IProps {
+    people: Props["people"]
+    setPeople: React.Dispatch<React.SetStateAction<{
+        name: string;
+        age: number;
+        url: string;
+        notes?: string | undefined;
+    }[]>>
+}
 
 const AddToList = () => {
 
