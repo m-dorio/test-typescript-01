@@ -2,10 +2,10 @@ import React from "react";
 
 interface IProps{
   people: {
-    name: string
-    age: number
-    url: string
-    notes?: string
+      name: string
+      age: number
+      url: string
+      notes?: string
   }[]
 }
 
@@ -17,10 +17,10 @@ const List: React.FC<IProps> = ({ people }) => {
                 <li className="List">
                 <div className="List-header">
                     <img src={person.url} alt="" className="List-img" />
-                    <h2>{person.name}</h2>
-                    <p>{person.age} years old</p>
-                    <p className="List-note">{person.notes}</p>
                 </div>
+                <h2>{person.name}</h2>
+                <p>{person.age} years old</p>
+                <p className="List-note">{person.notes}</p>
             </li>
             )
         }
