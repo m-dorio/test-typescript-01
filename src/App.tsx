@@ -2,25 +2,22 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+interface IState{
+  people: {
+    name: string
+    age: number
+    url: string
+    notes?: string
+  }[]
+}
+
 function App() {
 
-  const [people, setPeople] = useState<{age: number, name: string}[]>([
-    // {
-    // name: "LeBron James",
-    //   url: "",
-    //   age: 30,
-    // info:"Allergic to its team mates"
-    // },
-    // {
-    //   name: "Kobe",
-    //   url: "",
-    //   age: 31
-    // }
-  ]);
+  const [people, setPeople] = useState<IState["people"]>([]);
 
-  // people.map(person => {
-  //   person.name
-  // });
+  people.map(person => {
+    person.notes
+  })
 
   return (
     <div className="App">
