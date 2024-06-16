@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import List from './Components/List';
+import AddToList from './Components/AddToList';
 
 interface IState{
   people: {
@@ -29,6 +30,7 @@ function App() {
       <h1>Invited Game friends</h1>
       {/* pass data props here */}
       <List people={people} />
+      <AddToList />
     </div>
   );
 }
