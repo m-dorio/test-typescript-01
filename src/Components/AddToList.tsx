@@ -32,9 +32,9 @@ const AddToList: React.FC<IProps> = ({ people, setPeople }) => {
             // every person from people list
             ...people, {
                 name: input.name,
-                age: input.age,
-                img: input.img,
-                note: input.notes
+                age: parseInt(input.age),
+                url: input.imgUrl,
+                notes: input.notes
             }
 
         ])
