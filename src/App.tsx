@@ -14,7 +14,14 @@ interface IState{
 
 function App() {
 
-  const [people, setPeople] = useState<IState["people"]>([]);
+  const [people, setPeople] = useState<IState["people"]>([
+    {
+      name: "John Smith",
+      url: "https://www.signivis.com/img/custom/avatars/member-avatar-01.png",
+      age: 32,
+      notes: "Lorem ipsum dolor sit amet"
+    }
+  ]);
   // Pass data to props
 
   return (
