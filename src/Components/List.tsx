@@ -9,8 +9,7 @@ interface IProps{
   }[]
 }
 
-const List = (props: IProps) => {
-
+const List: React.FC<IProps> = () => {
     return (
         <div>
             I am a list of person
