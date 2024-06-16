@@ -4,19 +4,23 @@ import './App.css';
 
 function App() {
 
-  const [people, setPeople] = useState([
-    {
-    name: "LeBron James",
-      url: "",
-      age: 30,
-    info:"Allergic to its team mates"
-    },
-    {
-      name: "Kobe",
-      url: "",
-      age: 31
-    }
+  const [people, setPeople] = useState<{age: number, name: string}[]>([
+    // {
+    // name: "LeBron James",
+    //   url: "",
+    //   age: 30,
+    // info:"Allergic to its team mates"
+    // },
+    // {
+    //   name: "Kobe",
+    //   url: "",
+    //   age: 31
+    // }
   ]);
+
+  // people.map(person => {
+  //   person.name
+  // });
 
   return (
     <div className="App">
